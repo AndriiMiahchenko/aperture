@@ -1,3 +1,35 @@
+.grid {
+
+    .logo {
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-item a {
+            display: block;
+            text-decoration: none;
+            color: $color-white;
+            font-size: 13px;
+            font-weight: 400;
+            border: 2px solid $bg-color-black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .menu-item a:hover {
+            color: $bg-color-black;
+            border: 2px solid $color-white;
+            background-color: $color-white;
+        }
+    }
+}
+
 /* tablet => sm 768px */
 @media(min-width:768px) {
     .container {
@@ -9,13 +41,6 @@
 @media(min-width:992px) {
     .container {
         max-width: 960px;
-    }
-}
-
-/* desktop => lg 1200px */
-@media(min-width:1200px) {
-    .container {
-        max-width: 1150px;
 
         .grid {
             display: grid;
@@ -24,34 +49,25 @@
             padding-top: 30px;
             padding-bottom: 30px;
 
-            .menu {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                grid-gap: 5px;
-                
-                .menu-link {
-                    display: block;
-                    text-align: center;
-                    text-decoration: none;
-                    color: $color-white;
-                    font-size: 13px;
-                    font-weight: 400;
-                    border: 2px solid $bg-color-black;
-                    border-radius: 10px;
-                    padding: 10px;
-                }
-
-                .menu-link:hover {
-                    border: 2px solid $color-white;
-                    background-color: $color-white;
-                    color: $bg-color-black;
-                }
+            .logo {
+                text-align: left;
             }
         }
     }
 }
 
+/* desktop => lg 1200px */
+@media(min-width:1200px) {
+    .container {
+        max-width: 1150px;
+
+        
+    }
+}
+
 /* only mobile <= 767px */
 @media(max-width: 768px) {
-
+    .menu {
+        overflow-x: scroll;
+    }
 }
