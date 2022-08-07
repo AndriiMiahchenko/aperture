@@ -1,0 +1,126 @@
+.sweden {
+    
+    .black-square {
+        height: 540px;
+        background-color: $bg-color-black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
+        .sweden-name {
+            text-transform: uppercase;
+            color: $color-light-grey;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .sweden-title {
+            font-size: 28px;
+            color: $color-white;
+            margin-bottom: 20px;
+        }
+
+        .sweden-text {
+            font-size: 14px;
+            color: $color-light-grey;
+            margin-bottom: 20px;
+            line-height: 20px;
+        }
+
+        .sweden-link {
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            gap: 5px;
+            width: 50%;
+            border-radius: 15px;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .sweden-link:hover {
+            background-color: $color-light-grey;
+        }
+    }
+
+    .camera {
+        height: 540px;
+        background-image: url(img/IMAGE3.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        align-items: flex-end;
+
+        .sweden-position {
+            color: $color-white;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            sup {
+                font-size: 12px;
+                vertical-align: top;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+/* tablet => sm 768px */
+@media(min-width:768px) {
+    .container {
+        max-width: 720px;
+    } 
+
+    .sweden .black-square .sweden-link {
+        width: 25%;
+    }
+}
+
+/* laptop => md 992px */
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .sweden .black-square .sweden-link {
+        width: 20%;
+    }
+}
+
+/* desktop => lg 1200px */
+@media(min-width:1200px) {
+    .container {
+        max-width: 1150px;
+    }
+
+    .sweden {
+        display: flex;
+
+        .black-square,
+        .camera {
+            width: 50%;
+        }
+
+        .black-square {
+            padding: 100px;
+            text-align: left;
+
+            .sweden-link {
+                margin: 0;
+                width: 150px;
+            }
+        }
+    }
+}
+
+/* only mobile <= 767px */
+@media(max-width: 768px) {
+    
+}

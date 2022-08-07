@@ -1,0 +1,89 @@
+.fuji {
+    background-image: url(img/IMAGE2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+    align-items: center;
+    text-align: center;
+
+    .fuji-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fuji-title {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $color-white;
+        margin-bottom: 15px;
+    }
+
+    .fuji-text {
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-light-grey;
+    }
+
+    .fuji-position {
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        sup {
+            font-size: 12px;
+            vertical-align: top;
+            margin-left: 5px;
+        }
+    }
+}
+
+/* tablet => sm 768px */
+@media(min-width:768px) {
+    .container {
+        max-width: 720px;
+
+        
+    } 
+}
+
+/* laptop => md 992px */
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+
+        
+    }
+
+    .fuji .fuji-about {
+        align-items: flex-end;
+
+        .fuji-text {
+            width: 30%;
+            text-align: justify;
+        }
+    }
+
+    .fuji .fuji-position {
+        justify-content: end;
+    }
+}
+
+/* desktop => lg 1200px */
+@media(min-width:1200px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+/* only mobile <= 767px */
+@media(max-width: 768px) {
+    
+}
