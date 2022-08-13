@@ -1,0 +1,73 @@
+.need-help {
+    background-color: $bg-color-black;
+    text-align: center;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.need-help-title {
+    font-size: 40px;
+    line-height: 42px;
+    color: $color-white;
+    margin-bottom: 20px;
+}
+
+.need-help-text {
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-light-grey;
+    margin-bottom: 20px;
+}
+
+.need-help-link {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    width: 50%;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* tablet => sm 768px */
+@media(min-width:768px) {
+    .container {
+        max-width: 720px;
+
+        .need-help-link {
+            width: 25%;
+        }
+    } 
+}
+
+/* laptop => md 992px */
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+
+        .need-help-title {
+            width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .need-help-link {
+            width: 17%;
+        }
+    }
+}
+
+/* desktop => lg 1200px */
+@media(min-width:1200px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+/* only mobile <= 767px */
+@media(max-width: 768px) {
+    
+}
