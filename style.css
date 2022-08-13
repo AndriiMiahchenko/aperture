@@ -670,22 +670,19 @@ body {
   padding-bottom: 120px;
   padding-top: 120px;
 }
-
-.need-help-title {
+.need-help .need-help-title {
   font-size: 40px;
   line-height: 42px;
   color: white;
   margin-bottom: 20px;
 }
-
-.need-help-text {
+.need-help .need-help-text {
   font-size: 24px;
   line-height: 30px;
   color: #C0C0C0;
   margin-bottom: 20px;
 }
-
-.need-help-link {
+.need-help .need-help-link {
   background-color: white;
   text-decoration: none;
   color: black;
@@ -697,6 +694,9 @@ body {
   border-radius: 15px;
   justify-content: center;
   margin: 0 auto;
+}
+.need-help .need-help-link:hover {
+  background-color: #C0C0C0;
 }
 
 /* tablet => sm 768px */
